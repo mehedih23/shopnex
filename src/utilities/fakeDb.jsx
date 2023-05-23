@@ -6,7 +6,7 @@ const addToDb = (id) =>{
         const newQuantity = quantity + 1;
         shoppingCart[id] = newQuantity;
     } else{
-        shoppingCart[id] =1;
+        shoppingCart[id] = 1;
     }
 
     localStorage.setItem('shopping-cart', JSON.stringify(shoppingCart));
@@ -25,4 +25,5 @@ const getStoredCart = () =>{
 
 export {
     addToDb,
+    getStoredCart,
 }

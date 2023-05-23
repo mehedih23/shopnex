@@ -1,7 +1,7 @@
 import React from 'react';
 import './Product.css'
 
-const Product = ({product,handleAddToCart}) => {
+const Product = ({ product ,handleAddToCart }) => {
     const {img, name, price, seller,ratings} = product;
     return (
         <div className=''>
